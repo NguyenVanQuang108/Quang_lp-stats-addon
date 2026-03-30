@@ -1,0 +1,94 @@
+/* LearnPress Stats Dashboard - Frontend Styles */
+
+.lp-stats-frontend {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.lp-stats-frontend h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.lp-stats-frontend .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.lp-stats-frontend .stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.lp-stats-frontend .stat-label {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.lp-stats-frontend .progress-bar {
+    background: #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.lp-stats-frontend .progress-fill {
+    background: #0073aa;
+    height: 10px;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+.lp-stats-frontend .popular-courses {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.lp-stats-frontend .popular-courses h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.lp-stats-frontend .popular-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lp-stats-frontend .popular-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.lp-stats-frontend .popular-list li:last-child {
+    border-bottom: none;
+}
+
+.lp-stats-frontend .course-count {
+    background: #0073aa;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lp-stats-frontend .stats-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+    
+    .lp-stats-frontend .stat-number {
+        font-size: 28px;
+    }
+}
